@@ -26,7 +26,7 @@ public class Signup {
     @NotEmpty(message = "password is Required")
     @Pattern(regexp = "^[a-zA-Z0-9@]{8,12}$",message = "PassWord Cannot Contain Special Characters And Can Be Of 8 to 12 Words")
     String password;
-    @Column(name = "Email Id",unique = true,nullable = false)
+    @Column(name = "EmailId",unique = true,nullable = false)
     @NotEmpty(message = "Please Enter an Email Address!")
     @Pattern(regexp = "^[a-z0-9@.]$",message = "Please Enter An Valid Email Address!")
     String email;
